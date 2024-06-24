@@ -4,6 +4,8 @@
 ```python
 import psutil
 import datetime
-
-´´´markdown
-###
+```
+### CPU-Auslastung in Prozent
+```python
+def get_system_metrics():
+    cpu_usage = psutil.cpu_percent(interval=1)
